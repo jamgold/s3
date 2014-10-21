@@ -1,0 +1,30 @@
+<head>
+  <title>s3</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  {{> s3_tester}}
+</template>
+
+<template name="s3_tester">
+    <input type="file" class="file_bag">
+    <button class="upload">Upload</button>
+
+    {{#each files}}
+    	{{#if uploading}}
+        <p>{{percent_uploaded}}</p>
+    	{{else}}
+    	<img src="{{this.url}}">
+    	{{/if}}
+    {{/each}}
+</template>
