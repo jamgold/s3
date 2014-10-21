@@ -1,7 +1,7 @@
 s3
 ==
 
-demo repository to test lepozepo:s3
+demo repository to test [lepozepo:s3](https://github.com/Lepozepo/S3)
 
 run with
 <pre><code>
