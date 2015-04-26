@@ -3,10 +3,12 @@ s3
 
 demo repository to test [lepozepo:s3](https://github.com/Lepozepo/S3)
 
-run with
+create private/settings.json
+
 <pre><code>
-export AWS_ACCESS_KEY_ID="key"
-export AWS_SECRET_ACCESS_KEY="secret"
-export AWS_BUCKET="bucket name"
-meteor run
-</code></pre>
+{
+    "AWSAccessKeyId": "your key",
+    "AWSSecretAccessKey": "your secret",
+    "S3Bucket": "your bucket",
+    "S3Region": "the region of your bucket"
+}</code></pre>

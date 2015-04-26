@@ -3,28 +3,30 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Welcome to Meteor and Amazone S3!</h1>
 
   {{> hello}}
 
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-
   {{> s3_tester}}
 </template>
 
 <template name="s3_tester">
     <input type="file" class="file_bag">
-    <button class="upload">Upload</button>
+    <button class="upload">Upload</button>    <button class="list">List</button>
 
+    <div>
     {{#each files}}
     	{{#if uploading}}
         <p>{{percent_uploaded}}</p>
     	{{else}}
-    	<img src="{{this.url}}">
+    	<img width=300 src="{{this.url}}">
     	{{/if}}
     {{/each}}
+    </div>
+
+    <ul class="list">
+    </ul>
 </template>
